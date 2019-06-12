@@ -1,26 +1,23 @@
 from __future__ import print_function
 
-import tensorflow as tf
-
 from tensorflow import keras
 
 import matplotlib.pylab as plt
-
 
 batch_size = 128
 num_classes = 10
 epochs = 10
 
 # input image dimensions
-img_x, img_y = 28, 28
+img_x, img_y = 32, 32
 
 # load the MNIST data set, which already splits into train and test sets for us
-(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+(x_train, y_train), (x_test, y_test) = keras.datasets.cifar10.load_data()
 # reshape the data into a 4D tensor - (sample_number, x_img_size, y_img_size, num_channels)
 # because the MNIST is greyscale, we only have a single channel - RGB colour images would have 3
-x_train = x_train.reshape(x_train.shape[0], img_x, img_y, 1)
-x_test = x_test.reshape(x_test.shape[0], img_x, img_y, 1)
-input_shape = (img_x, img_y, 1)
+x_train = x_train.reshape(x_train.shape[0], img_x, img_y, 3)
+x_test = x_test.reshape(x_test.shape[0], img_x, img_y, 3)
+input_shape = (img_x, img_y, 3)
 
 # convert the data to the right type
 x_train = x_train.astype('float32')
@@ -53,7 +50,11 @@ model.add(keras.layers.Flatten())
 model.add(keras.layers.Dense(1000, activation='relu'))
 model.add(keras.layers.Dense(num_classes, activation='softmax'))
 
-model.compile(loss=keras.losses.categorical_crossentropy,
+def mycrossentropy(y_true, y_pred, e=0.1):
+    return keras.losses.categorical_crossentropy(y_pred, y_true)
+
+
+model.compile(loss=mycrossentropy,
               optimizer=keras.optimizers.Adam(), metrics=['accuracy'])
 
 
