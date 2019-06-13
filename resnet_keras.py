@@ -39,13 +39,13 @@ if __name__ == '__main__':
     CB = [tb, cp, lr]
     input_shape = [x_train.shape[1], x_train.shape[2], x_train.shape[3]]
     print(x_train.shape)
-    model = resnet_model(out_class=n_class, input_shape = input_shape)
+    model = resnet_model(out_class=n_class, input_shape=input_shape)
 
     plot_model(model, show_layer_names=1)
 
-    model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer=keras.optimizers.Adam(), loss=keras.losses.categorical_crossentropy, metrics=['accuracy'])
 
     model.fit(x_train, y_train, batch_size=BATCH_SIZE, epochs=EPOCH, validation_split=0.3,
               callbacks=CB, shuffle=1)
 
-    loss, acc = model.evaluate(x_test, y_test, batch_size= BATCH_SIZE)
+    loss, acc = model.evaluate(x_test, y_test, batch_size=BATCH_SIZE)

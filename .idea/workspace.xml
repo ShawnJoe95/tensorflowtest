@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87c80a85-c76b-476c-acfb-3a4d51c4c8b2" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/resnet_keras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resnet_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resnet_18.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resnet_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnn_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resnet_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/resnet_keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resnet_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/resnet_model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,26 +27,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="2" />
-          <entry key="py" value="10" />
+          <entry key="png" value="3" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="2" />
-          <entry key="Python" value="10" />
+          <entry key="Image" value="3" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1774" />
-          <entry key="txt" value="67" />
+          <entry key="py" value="1956" />
+          <entry key="txt" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="67" />
-          <entry key="Python" value="1774" />
+          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="Python" value="1956" />
         </counts>
       </usages-collector>
     </session>
@@ -79,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2156">
+            <state relative-caret-position="22">
               <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
             </state>
           </provider>
@@ -88,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnn_keras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            <state relative-caret-position="478">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="47" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -98,15 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resnet_keras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="288">
+              <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -114,11 +110,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resnet_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+            <state relative-caret-position="-578">
+              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resnet_example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
+              <folding>
+                <element signature="e#1294#1331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resnet_18.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,6 +152,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>x</find>
+      <find>img_h</find>
+      <find>input_shape</find>
+      <find>data_augmentation</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -144,9 +172,12 @@
         <option value="$PROJECT_DIR$/Regression.py" />
         <option value="$PROJECT_DIR$/cnn.py" />
         <option value="$PROJECT_DIR$/my_loss_test.py" />
-        <option value="$PROJECT_DIR$/resnet_model.py" />
-        <option value="$PROJECT_DIR$/resnet_keras.py" />
         <option value="$PROJECT_DIR$/cnn_keras.py" />
+        <option value="$PROJECT_DIR$/resnet_keras.py" />
+        <option value="$PROJECT_DIR$/resnet18V2.py" />
+        <option value="$PROJECT_DIR$/resnet_18.py" />
+        <option value="$PROJECT_DIR$/resnet_model.py" />
+        <option value="$PROJECT_DIR$/resnet_example.py" />
       </list>
     </option>
   </component>
@@ -208,49 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnn_keras">
-    <configuration name="Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tensorflowtest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tensorflowtest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.resnet_example">
     <configuration name="cnn_keras" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tensorflowtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,6 +282,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="resnet_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tensorflowtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resnet_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="resnet_keras" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tensorflowtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,20 +324,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="resnet_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tensorflowtest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resnet_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Regression" />
-      <item itemvalue="Python.cnn" />
       <item itemvalue="Python.my_loss_test" />
       <item itemvalue="Python.cnn_keras" />
       <item itemvalue="Python.resnet_keras" />
+      <item itemvalue="Python.resnet_model" />
+      <item itemvalue="Python.resnet_example" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cnn_keras" />
+        <item itemvalue="Python.resnet_example" />
         <item itemvalue="Python.resnet_keras" />
+        <item itemvalue="Python.resnet_model" />
+        <item itemvalue="Python.cnn_keras" />
         <item itemvalue="Python.my_loss_test" />
-        <item itemvalue="Python.cnn" />
-        <item itemvalue="Python.Regression" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559827096276</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="resnet keras testing">
+      <created>1560338570845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560338570845</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -421,7 +459,8 @@
     <MESSAGE value="text classification done" />
     <MESSAGE value="回归（Regression）模型 is done" />
     <MESSAGE value="cnn_keras is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="cnn_keras is done" />
+    <MESSAGE value="resnet keras testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="resnet keras testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,11 +469,6 @@
           <url>file://$PROJECT_DIR$/text_classification.py</url>
           <line>24</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/resnet_keras.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -466,28 +500,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
+        <state relative-caret-position="22">
           <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cnn_keras.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        <state relative-caret-position="478">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="47" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet18V2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="49" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet_18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python37/Lib/site-packages/keras/engine/training_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resnet_keras.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="288">
+          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -496,8 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resnet_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+        <state relative-caret-position="-578">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resnet_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="439" column="29" lean-forward="true" selection-start-line="439" selection-start-column="29" selection-end-line="439" selection-end-column="29" />
+          <folding>
+            <element signature="e#1294#1331#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

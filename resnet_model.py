@@ -17,42 +17,35 @@ def conv_block(input_tensor, filters):
 
     x = keras.layers.Conv2D(filter3,(1,1),strides=1)(x)
     x = keras.layers.BatchNormalization(axis=-1)(x)
-    x = keras.layers.Activation('relu')(x)
 
     y = keras.layers.Conv2D(filter3,(1,1),strides=1)(input_tensor)
     y = keras.layers.BatchNormalization(axis=-1)(y)
-    y = keras.layers.Activation('relu')(y)
 
     # out = keras.layers.merge([x,y],mode='sum')
-    out = keras.layers.Add()([x, y])
-    z = keras.layers.Activation('relu')(out)
+    x = keras.layers.Add()([x, y])
+    x = keras.layers.Activation('relu')(x)
 
-    return z
+    return x
 
 
 def identity_block(input_tensor, filters):
     filter1, filter2, filter3 = filters
 
     x = keras.layers.Conv2D(filter1,(1,1),strides=1)(input_tensor)
-    x = keras.layers.BatchNormalization(axis=-1)(x)
+    x = keras.layers.BatchNormalization()(x)
     x = keras.layers.Activation('relu')(x)
 
     x = keras.layers.Conv2D(filter2,(3,3),strides=1,padding='same')(x)
-    x = keras.layers.BatchNormalization(axis=-1)(x)
+    x = keras.layers.BatchNormalization()(x)
     x = keras.layers.Activation('relu')(x)
 
     x = keras.layers.Conv2D(filter3,(1,1),strides=1)(x)
-    x = keras.layers.BatchNormalization(axis=-1)(x)
-    x = keras.layers.Activation('relu')(x)
+    x = keras.layers.BatchNormalization()(x)
 
-    # y = keras.layers.Conv2D(filter3,(1,1),strides=1)(input_tensor)
-    # y = keras.layers.BatchNormalization(axis=-1)(y)
-    # y = keras.layers.Activation('relu')(y)
     # identity block 和 conv block 差别在于侧路（input）需不需要卷积
-    # out = keras.layers.merge([x,input_tensor],mode='sum')
-    out = keras.layers.Add()([x, input_tensor])
-    z = keras.layers.Activation('relu')(out)
-    return z
+    x = keras.layers.Add()([x, input_tensor])
+    x = keras.layers.Activation('relu')(x)
+    return x
 
 
 def resnet_model(out_class, input_shape): # ResNet50
@@ -62,7 +55,7 @@ def resnet_model(out_class, input_shape): # ResNet50
     x = keras.layers.BatchNormalization(axis=-1)(x) #bn_conv1
     x = keras.layers.Activation('relu')(x) #conv1_relu
 
-    x = keras.layers.MaxPool2D(pool_size=(3,3),strides=2)(x) # 1,64,56,56
+    x = keras.layers.MaxPool2D(pool_size=(3,3),strides=2,padding='same')(x) # 1,64,56,56
 
     # block1[3]  (64,64,256) 1,2 in:1,64,56,56
     x = conv_block(x, [64, 64, 256]) #out=1,256,56,56
@@ -88,8 +81,8 @@ def resnet_model(out_class, input_shape): # ResNet50
     x = identity_block(x, [512, 512, 2048])  # out=1,2048,7,7
     x = identity_block(x, [512, 512, 2048])  # out=1,2048,7,7
 
-    # maxpool kernel_size=7, stride=1 out=1,2048,1,1
-    x = keras.layers.MaxPool2D(pool_size=(7, 7), strides=1)(x)
+    # Averagepool kernel_size=7, stride=1 out=1,2048,1,1
+    x = keras.layers.AveragePooling2D(pool_size=(7, 7), strides=1)(x)
 
     # flatten
     x = keras.layers.Flatten()(x)
